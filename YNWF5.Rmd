@@ -1,9 +1,11 @@
 ---
-title: "Wk6 Homework"
-author: "YNWF5"
-date: "2022-11-15"
+title: "YWRF1"
 output: html_document
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -13,6 +15,10 @@ library(tidyverse)
 Change the number in square brackets to view the colours above
 ```{r}
 ggplot(iris, aes(x=Sepal.Length)) +
-  geom_histogram(fill=col[391]) +
+  geom_histogram(fill=col[432]) +
   theme_minimal()
 ```
+
+Choose your favorite colour and paste the graph code into a NEW RMD
+
+Call it YOUR CANDIATE NUMBER and push it to the repo.
