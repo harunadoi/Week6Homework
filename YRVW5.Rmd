@@ -1,0 +1,15 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Here is a list of all the named colours in R
+```{r}
+col <- colors()
+```
+Change the number in square brackets to view the colours above
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[84]) +
+  theme_minimal()
+```
