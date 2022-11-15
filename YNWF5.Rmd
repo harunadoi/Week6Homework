@@ -1,0 +1,18 @@
+---
+title: "Wk6 Homework"
+author: "YNWF5"
+date: "2022-11-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Change the number in square brackets to view the colours above
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[391]) +
+  theme_minimal()
+```
