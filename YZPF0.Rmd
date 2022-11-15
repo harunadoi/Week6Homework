@@ -1,0 +1,29 @@
+---
+title: "YZPF0"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Q9. Clone the repo https://github.com/PALS0043/Week6 and COPY the code for the histogram from Template_file.Rmd into a new file, with the name of your candidate number. Save this file in your local copy of the repo and change the colour of the plot to your favourite colour. Then commit and PUSH this file to the repo.
+
+Here is a list of all the named colours in R
+```{r}
+col <- colors()
+colors()
+```
+Change the number in square brackets to view the colours above
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[498]) +
+  theme_minimal()
+```
+
+Choose your favorite colour and paste the graph code into a NEW RMD
+
+Call it YOUR CANDIATE NUMBER and push it to the repo.
+
+
