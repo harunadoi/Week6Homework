@@ -18,7 +18,7 @@ colors()
 Change the number in square brackets to view the colours above
 ```{r}
 ggplot(iris, aes(x=Sepal.Length)) +
-  geom_histogram(fill=col[64]) +
+  geom_histogram(fill=col[589]) +
   theme_minimal()
 ```
 
