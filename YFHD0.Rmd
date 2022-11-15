@@ -1,0 +1,25 @@
+---
+title: "YFHD0"
+output: html_document
+date: "2022-11-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+Here is a list of all the named colours in R
+```{r}
+col <- colors()
+colors()
+```
+Change the number in square brackets to view the colours above
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[419]) +
+  theme_minimal()
+```
