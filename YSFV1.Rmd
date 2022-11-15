@@ -1,0 +1,23 @@
+---
+title: "YSFV1"
+author: "Dora Szegedi"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+col <- colors()
+colors()
+```
+
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[387]) +
+  theme_minimal()
+```
+
