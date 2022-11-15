@@ -1,0 +1,27 @@
+---
+title: "W6 HW Q10"
+author: "Judy"
+date: "15/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Here is a list of all the named colours in R
+```{r}
+col <- colors()
+colors()
+```
+Change the number in square brackets to view the colours above
+```{r}
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram(fill=col[499]) +
+  theme_minimal()
+```
+
+Choose your favorite colour and paste the graph code into a NEW RMD
+
+Call it YOUR CANDIATE NUMBER and push it to the repo.
